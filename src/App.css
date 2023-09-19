@@ -1,0 +1,144 @@
+body {
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  text-transform: uppercase;
+  color: #00b368; 
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.loading, .error {
+  font-size: 50px;
+}
+
+.stock-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+/* Card Container */
+.product-card {
+  border: 2px solid #009688;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5; 
+  text-align: left;
+}
+
+.product-card:hover {
+  cursor: pointer;
+}
+
+/* Product Image */
+.product-card-image img {
+  display: block;
+  margin: 0 auto;
+  height: 160px;
+  width: 240px;
+  border-radius: 8px;
+}
+
+/* Product Details */
+.product-card-details h2 {
+  font-size: 1.5rem;
+  margin: 16px 0;
+  text-align: center;
+  color: #1e90ff; 
+}
+
+/* Product Price */
+.product-card-details .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: center;
+  color: #4caf50; 
+}
+
+/* Product Rating */
+.product-card-details .rating {
+  font-size: 1.2rem;
+  color: #ff9800; 
+}
+
+/* Product Brand */
+.product-card-details .brand {
+  font-size: 1.2rem;
+  color: #795548; 
+}
+
+.product-card-details .discount {
+  font-size: 1.2rem;
+  color: #ff4081; 
+}
+
+/*** Basket ***/
+
+.basket-container {
+  margin-right: 200px;
+}
+
+.basket {
+  display: flex;
+  justify-content: right;
+}
+
+.basket:hover {
+  cursor: pointer;
+}
+
+
+/** Basket **/
+
+/* ShoppingCart.css */
+
+.basket-container {
+  position: relative;
+}
+
+.basket {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.items {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.items p {
+  margin: 0;
+  padding: 5px;
+}
+
+.items ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items li {
+  padding: 5px;
+}
